@@ -10,8 +10,8 @@ const HeroSection = () => {
         className="absolute inset-0 opacity-10"
         style={{
           backgroundImage: `
-            linear-gradient(30deg, rgba(0, 153, 230, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(0, 153, 230, 0.2) 87.5%),
-            linear-gradient(150deg, rgba(0, 153, 230, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(0, 153, 230, 0.2) 87.5%)
+            linear-gradient(30deg, rgba(14, 165, 233, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(14, 165, 233, 0.2) 87.5%),
+            linear-gradient(150deg, rgba(168, 85, 247, 0.2) 12%, transparent 12.5%, transparent 87%, rgba(168, 85, 247, 0.2) 87.5%)
           `,
           backgroundSize: '80px 140px',
           animation: 'backgroundShift 20s linear infinite',
@@ -29,9 +29,9 @@ const HeroSection = () => {
             </div>
 
             {/* Headline */}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-              Secure Your Digital{' '}
-              <span className="text-gradient-light">Infrastructure</span>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6 text-white">
+              Secure Your{' '}
+              <span className="text-gradient-light">Digital Infrastructure</span>
             </h1>
 
             {/* Subtitle */}
