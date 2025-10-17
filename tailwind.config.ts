@@ -24,9 +24,14 @@ const config: Config = {
         secondary: {
           50: '#F0E6FF',
           100: '#D4B3FF',
+          200: '#C299FF',
           300: '#A366FF',
+          400: '#8F4DFF',
           500: '#7C3AED',
+          600: '#6B2FCC',
           700: '#5B21B6',
+          800: '#4A1A80',
+          900: '#2E1050',
         },
         neutral: {
           0: '#FFFFFF',
