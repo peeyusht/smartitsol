@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #0099E6;
+    --color-secondary: #7C3AED;
+  }
+
+  * {
+    @apply border-neutral-200;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-neutral-50 text-neutral-600 antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-neutral-800 font-display;
+  }
+}
+
+@layer components {
+  /* Glass Morphism */
+  .glass-light {
+    @apply bg-white/70 backdrop-blur-xl border border-white/30;
+  }
+
+  .glass-dark {
+    @apply bg-neutral-800/70 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-primary {
+    @apply bg-primary-500/10 backdrop-blur-xl border border-primary-500/20;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center font-semibold rounded-base
+           transition-all duration-300 ease-out disabled:opacity-50
+           disabled:cursor-not-allowed focus:outline-none focus:ring-3
+           focus:ring-primary-500/30 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply btn bg-gradient-to-br from-primary-500 to-secondary-500 bg-[length:200%_200%]
+           text-white hover:-translate-y-0.5 hover:shadow-primary hover:bg-right
+           active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply btn border-2 border-primary-500 text-primary-600
+           hover:bg-primary-500 hover:text-white hover:-translate-y-0.5
+           hover:shadow-md;
+  }
+
+  .btn-ghost {
+    @apply btn text-primary-600 relative after:absolute after:bottom-2
+           after:left-6 after:right-6 after:h-0.5 after:bg-primary-500
+           after:scale-x-0 after:transition-transform after:duration-300 after:origin-left
+           hover:text-primary-700 hover:after:scale-x-100;
+  }
+
+  /* Button Sizes */
+  .btn-sm {
+    @apply px-6 py-3 text-sm h-10 min-w-[120px];
+  }
+
+  .btn-md {
+    @apply px-8 py-4 text-base h-[52px] min-w-[160px];
+  }
+
+  .btn-lg {
+    @apply px-10 py-5 text-lg h-[60px] min-w-[200px];
+  }
+
+  /* Section Styles */
+  .section {
+    @apply py-24 px-8;
+  }
+
+  .section-container {
+    @apply max-w-screen-xl mx-auto;
+  }
+
+  .section-header {
+    @apply text-center mb-16;
+  }
+
+  .section-overline {
+    @apply text-sm font-semibold uppercase tracking-wider text-primary-600 mb-3;
+  }
+
+  .section-title {
+    @apply text-4xl md:text-5xl font-bold mb-4 leading-tight;
+  }
+
+  .section-description {
+    @apply text-lg text-neutral-600 max-w-2xl mx-auto leading-relaxed;
+  }
+
+  /* Scroll Animations */
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-500 to-secondary-500 bg-clip-text text-transparent;
+  }
+
+  .text-gradient-light {
+    @apply bg-gradient-to-r from-primary-200 to-secondary-200 bg-clip-text text-transparent;
+  }
+}
