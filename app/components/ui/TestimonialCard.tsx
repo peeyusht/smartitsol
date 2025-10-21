@@ -1,3 +1,5 @@
+import { ShowMoreToggle } from './ShowMoreToggle'
+
 interface TestimonialCardProps {
   stars: number
   quote: string
@@ -25,9 +27,11 @@ export function TestimonialCard({
       <div className="testimonial-stars">
         {'⭐'.repeat(stars)}
       </div>
-      <p className="testimonial-text">
-        &ldquo;{quote}&rdquo;
-      </p>
+      <ShowMoreToggle maxHeight={90}>
+        <p className="testimonial-text">
+          &ldquo;{quote}&rdquo;
+        </p>
+      </ShowMoreToggle>
       <div className="testimonial-author">
         <div className="author-info">
           <strong>{author.name}</strong>

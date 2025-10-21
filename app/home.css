@@ -1589,6 +1589,14 @@ nav a {
     margin-bottom: 4rem;
 }
 
+.contact-header h2,
+.contact-header h3,
+.contact h2,
+.contact h3,
+.contact h4 {
+    color: white;
+}
+
 .urgency-banner {
     background: rgba(249, 115, 22, 0.2);
     border: 1px solid rgba(249, 115, 22, 0.3);
@@ -2371,6 +2379,77 @@ nav a,
 
 nav a {
     padding: 0.75rem 0.5rem;
+}
+
+/* ===== SHOW MORE/LESS TOGGLE ===== */
+.show-more-wrapper {
+    position: relative;
+}
+
+.show-more-content {
+    transition: max-height var(--transition-slow) ease-in-out;
+    position: relative;
+}
+
+.show-more-content.collapsed {
+    position: relative;
+}
+
+.show-more-fade {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, var(--white));
+    pointer-events: none;
+}
+
+.testimonial-card .show-more-fade {
+    background: linear-gradient(to bottom, transparent, var(--white));
+}
+
+.fortinet-card .show-more-fade {
+    background: linear-gradient(to bottom, transparent, var(--white));
+}
+
+.deployment-card .show-more-fade {
+    background: linear-gradient(to bottom, transparent, var(--white));
+}
+
+.show-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    padding: 0.5rem 1rem;
+    background: transparent;
+    border: 1px solid var(--cyan-600);
+    border-radius: var(--radius-full);
+    color: var(--cyan-600);
+    font-size: var(--font-sm);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: all var(--transition-base);
+}
+
+.show-more-btn:hover {
+    background: var(--cyan-600);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.show-more-btn:active {
+    transform: translateY(0);
+}
+
+.show-more-btn svg {
+    transition: transform var(--transition-base);
+}
+
+.show-more-btn:hover svg {
+    transform: translateY(2px);
 }
 
 /* ===== UTILITY CLASSES ===== */

@@ -1,4 +1,5 @@
 import { fortinetContent } from '@/app/data/fortinet'
+import { ShowMoreToggle } from '../ui/ShowMoreToggle'
 
 export function FortinetSection() {
   return (
@@ -24,22 +25,27 @@ export function FortinetSection() {
               <div className="fortinet-icon" aria-hidden="true">{product.icon}</div>
               <h3>{product.title}</h3>
               <p className="fortinet-subtitle">{product.subtitle}</p>
-              <p dangerouslySetInnerHTML={{ __html: product.description }} />
 
-              <ul className="fortinet-features">
-                {product.features.map((feature, idx) => (
-                  <li key={idx}>✓ {feature}</li>
-                ))}
-              </ul>
+              <ShowMoreToggle maxHeight={200}>
+                <div>
+                  <p dangerouslySetInnerHTML={{ __html: product.description }} />
 
-              <div className="fortinet-services-box">
-                <h4>Audit & Review Services:</h4>
-                <ul>
-                  {product.auditServices.map((service, idx) => (
-                    <li key={idx}>• {service}</li>
-                  ))}
-                </ul>
-              </div>
+                  <ul className="fortinet-features">
+                    {product.features.map((feature, idx) => (
+                      <li key={idx}>✓ {feature}</li>
+                    ))}
+                  </ul>
+
+                  <div className="fortinet-services-box">
+                    <h4>Audit & Review Services:</h4>
+                    <ul>
+                      {product.auditServices.map((service, idx) => (
+                        <li key={idx}>• {service}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </ShowMoreToggle>
             </div>
           ))}
         </div>

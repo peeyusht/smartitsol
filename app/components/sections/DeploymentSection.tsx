@@ -1,4 +1,5 @@
 import { deploymentContent } from '@/app/data/deployment'
+import { ShowMoreToggle } from '../ui/ShowMoreToggle'
 
 export function DeploymentSection() {
   return (
@@ -24,24 +25,29 @@ export function DeploymentSection() {
               <div className="deployment-icon" aria-hidden="true">{service.icon}</div>
               <h3>{service.title}</h3>
               <p className="deployment-subtitle">{service.subtitle}</p>
-              <p dangerouslySetInnerHTML={{ __html: service.description }} />
 
-              {service.categories.map((category, catIndex) => (
-                <div key={catIndex} className="service-category">
-                  <h4>{category.title}</h4>
-                  <ul className="deployment-features">
-                    {category.features.map((feature, featIndex) => (
-                      <li key={featIndex}>✓ {feature}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
+              <ShowMoreToggle maxHeight={200}>
+                <div>
+                  <p dangerouslySetInnerHTML={{ __html: service.description }} />
 
-              {service.footer && (
-                <div className={`deployment-${service.footer.type}`}>
-                  <span dangerouslySetInnerHTML={{ __html: service.footer.content }} />
+                  {service.categories.map((category, catIndex) => (
+                    <div key={catIndex} className="service-category">
+                      <h4>{category.title}</h4>
+                      <ul className="deployment-features">
+                        {category.features.map((feature, featIndex) => (
+                          <li key={featIndex}>✓ {feature}</li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+
+                  {service.footer && (
+                    <div className={`deployment-${service.footer.type}`}>
+                      <span dangerouslySetInnerHTML={{ __html: service.footer.content }} />
+                    </div>
+                  )}
                 </div>
-              )}
+              </ShowMoreToggle>
             </div>
           ))}
         </div>
