@@ -1756,8 +1756,8 @@ nav a {
 /* Fortinet Section */
 .fortinet-section {
     padding: 8rem 0;
-    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-slate) 50%, #1a2942 100%);
-    color: white;
+    background: linear-gradient(135deg, var(--neutral-50) 0%, var(--white) 30%, var(--cyan-50) 70%, var(--neutral-100) 100%);
+    color: var(--neutral-900);
     position: relative;
     overflow: hidden;
 }
@@ -1770,8 +1770,8 @@ nav a {
     right: 0;
     bottom: 0;
     background:
-        radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.05) 0%, transparent 50%),
-        radial-gradient(circle at 90% 80%, rgba(249, 115, 22, 0.05) 0%, transparent 50%);
+        radial-gradient(circle at 10% 20%, rgba(0, 188, 212, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(255, 152, 0, 0.06) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -1781,14 +1781,14 @@ nav a {
 }
 
 .fortinet-section .section-title {
-    background: linear-gradient(135deg, #ffffff 0%, var(--accent-cyan) 100%);
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--cyan-600) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .fortinet-section .section-subtitle {
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--neutral-700);
 }
 
 .fortinet-intro {
@@ -1800,7 +1800,7 @@ nav a {
 .fortinet-intro-text {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--neutral-700);
 }
 
 .fortinet-grid {
@@ -1811,14 +1811,14 @@ nav a {
 }
 
 .fortinet-card {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: var(--white);
+    border: 1px solid rgba(15, 23, 42, 0.08);
     border-radius: 24px;
     padding: 2.5rem 2rem;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow-md);
 }
 
 .fortinet-card::before {
@@ -1828,16 +1828,16 @@ nav a {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--highlight-orange), var(--accent-cyan));
+    background: linear-gradient(90deg, var(--cyan-500), var(--cyan-700));
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
 
 .fortinet-card:hover {
     transform: translateY(-8px);
-    background: rgba(255, 255, 255, 0.12);
-    border-color: rgba(14, 165, 233, 0.4);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    background: var(--white);
+    border-color: rgba(0, 188, 212, 0.2);
+    box-shadow: var(--shadow-2xl);
 }
 
 .fortinet-card:hover::before {
@@ -1847,14 +1847,14 @@ nav a {
 .fortinet-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, var(--highlight-orange), var(--highlight-amber));
+    background: linear-gradient(135deg, var(--cyan-500), var(--cyan-700));
     border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
     font-size: 2rem;
-    box-shadow: 0 8px 32px rgba(249, 115, 22, 0.4);
+    box-shadow: var(--shadow-cyan);
     transition: transform 0.3s ease;
 }
 
@@ -1866,12 +1866,12 @@ nav a {
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: white;
+    color: var(--navy-900);
 }
 
 .fortinet-subtitle {
     font-size: 0.95rem;
-    color: var(--accent-cyan);
+    color: var(--cyan-600);
     margin-bottom: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -1879,7 +1879,7 @@ nav a {
 }
 
 .fortinet-card p {
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--neutral-700);
     line-height: 1.7;
     margin-bottom: 1.5rem;
 }
@@ -1892,14 +1892,14 @@ nav a {
 
 .fortinet-features li {
     padding: 0.6rem 0;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--neutral-700);
     font-size: 0.95rem;
     line-height: 1.6;
 }
 
 .fortinet-services-box {
-    background: rgba(14, 165, 233, 0.1);
-    border: 1px solid rgba(14, 165, 233, 0.3);
+    background: rgba(0, 188, 212, 0.08);
+    border: 1px solid rgba(0, 188, 212, 0.15);
     border-radius: 12px;
     padding: 1.5rem;
     margin-top: 1.5rem;
@@ -1908,7 +1908,7 @@ nav a {
 .fortinet-services-box h4 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--accent-cyan);
+    color: var(--cyan-700);
     margin-bottom: 1rem;
 }
 
@@ -1920,15 +1920,15 @@ nav a {
 
 .fortinet-services-box li {
     padding: 0.4rem 0;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--neutral-700);
     font-size: 0.9rem;
 }
 
 /* Fortinet CTA box */
 .fortinet-cta {
     margin-top: 4rem;
-    background: linear-gradient(135deg, rgba(14, 165, 233, 0.15), rgba(6, 182, 212, 0.1));
-    border: 2px solid rgba(14, 165, 233, 0.3);
+    background: linear-gradient(135deg, rgba(0, 188, 212, 0.12), rgba(0, 188, 212, 0.08));
+    border: 2px solid rgba(0, 188, 212, 0.2);
     border-radius: 24px;
     padding: 3rem;
     text-align: center;
@@ -1938,12 +1938,12 @@ nav a {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: white;
+    color: var(--navy-900);
 }
 
 .fortinet-cta-content p {
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--neutral-700);
     line-height: 1.8;
     max-width: 800px;
     margin: 0 auto 2rem;
@@ -1961,7 +1961,7 @@ nav a {
 
 .fortinet-cta-benefits li {
     padding: 0.75rem;
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--neutral-800);
     font-size: 1rem;
 }
 
@@ -1976,24 +1976,24 @@ nav a {
 
 .pricing-label {
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--neutral-700);
 }
 
 .pricing-amount {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--highlight-orange);
+    color: var(--orange-600);
     font-family: 'Space Grotesk', sans-serif;
 }
 
 .pricing-detail {
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.75);
+    color: var(--neutral-600);
 }
 
 .fortinet-cta-btn {
     display: inline-block;
-    background: linear-gradient(135deg, var(--highlight-orange), var(--highlight-amber));
+    background: linear-gradient(135deg, var(--orange-600), var(--orange-700));
     color: white;
     padding: 1.25rem 3rem;
     border-radius: 50px;
@@ -2001,13 +2001,13 @@ nav a {
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 10px 40px rgba(249, 115, 22, 0.4);
+    box-shadow: var(--shadow-orange);
     margin-top: 1rem;
 }
 
 .fortinet-cta-btn:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 20px 60px rgba(249, 115, 22, 0.5);
+    box-shadow: var(--shadow-orange-lg);
 }
 
 /* Deployment & Consulting Section */
@@ -2053,7 +2053,7 @@ nav a {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-cyan), var(--accent-cyan));
+    background: linear-gradient(90deg, var(--cyan-500), var(--cyan-700));
     transform: scaleX(0);
     transition: transform 0.4s ease;
 }
@@ -2061,7 +2061,7 @@ nav a {
 .deployment-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
-    border-color: rgba(14, 165, 233, 0.2);
+    border-color: rgba(0, 188, 212, 0.2);
 }
 
 .deployment-card:hover::before {
@@ -2071,14 +2071,14 @@ nav a {
 .deployment-icon {
     width: 70px;
     height: 70px;
-    background: linear-gradient(135deg, var(--primary-cyan), var(--accent-cyan));
+    background: linear-gradient(135deg, var(--cyan-500), var(--cyan-700));
     border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 1.5rem;
     font-size: 2rem;
-    box-shadow: 0 8px 32px rgba(14, 165, 233, 0.3);
+    box-shadow: var(--shadow-cyan);
     transition: transform 0.3s ease;
 }
 
@@ -2090,12 +2090,12 @@ nav a {
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: var(--primary-navy);
+    color: var(--navy-900);
 }
 
 .deployment-subtitle {
     font-size: 0.95rem;
-    color: var(--primary-cyan);
+    color: var(--cyan-600);
     margin-bottom: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -2115,10 +2115,10 @@ nav a {
 .service-category h4 {
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--primary-navy);
+    color: var(--navy-900);
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--primary-cyan);
+    border-bottom: 2px solid var(--cyan-600);
 }
 
 .deployment-features {
@@ -2144,20 +2144,20 @@ nav a {
 }
 
 .deployment-guarantee {
-    background: rgba(14, 165, 233, 0.08);
-    border-left: 4px solid var(--primary-cyan);
+    background: rgba(0, 188, 212, 0.08);
+    border-left: 4px solid var(--cyan-600);
     color: var(--neutral-700);
 }
 
 .deployment-stat {
-    background: rgba(249, 115, 22, 0.08);
-    border-left: 4px solid var(--highlight-orange);
+    background: rgba(255, 152, 0, 0.08);
+    border-left: 4px solid var(--orange-600);
     color: var(--neutral-700);
 }
 
 .deployment-testimonial {
-    background: rgba(14, 165, 233, 0.05);
-    border-left: 3px solid var(--accent-cyan);
+    background: rgba(0, 188, 212, 0.05);
+    border-left: 3px solid var(--cyan-500);
     font-style: italic;
     color: var(--neutral-600);
 }
@@ -2166,7 +2166,7 @@ nav a {
 .deployment-process {
     margin-top: 5rem;
     padding: 3rem;
-    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-slate) 100%);
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 100%);
     border-radius: 24px;
     color: white;
 }
@@ -2192,7 +2192,7 @@ nav a {
 .timeline-number {
     width: 60px;
     height: 60px;
-    background: linear-gradient(135deg, var(--highlight-orange), var(--highlight-amber));
+    background: linear-gradient(135deg, var(--orange-600), var(--orange-700));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -2200,7 +2200,7 @@ nav a {
     font-size: 1.5rem;
     font-weight: 700;
     margin: 0 auto 1.5rem;
-    box-shadow: 0 8px 24px rgba(249, 115, 22, 0.4);
+    box-shadow: var(--shadow-orange);
 }
 
 .timeline-content h4 {
@@ -2219,8 +2219,8 @@ nav a {
 
 .timeline-duration {
     display: inline-block;
-    background: rgba(14, 165, 233, 0.2);
-    color: var(--accent-cyan);
+    background: rgba(0, 188, 212, 0.2);
+    color: var(--cyan-400);
     padding: 0.25rem 0.75rem;
     border-radius: 20px;
     font-size: 0.85rem;
@@ -2230,7 +2230,7 @@ nav a {
 /* Deployment CTA */
 .deployment-cta {
     margin-top: 4rem;
-    background: linear-gradient(135deg, var(--primary-cyan) 0%, var(--accent-cyan) 100%);
+    background: linear-gradient(135deg, var(--cyan-600) 0%, var(--cyan-700) 100%);
     border-radius: 24px;
     padding: 3rem;
     text-align: center;
@@ -2275,7 +2275,7 @@ nav a {
 
 .deployment-cta-btn {
     display: inline-block;
-    background: linear-gradient(135deg, var(--highlight-orange), var(--highlight-amber));
+    background: linear-gradient(135deg, var(--orange-600), var(--orange-700));
     color: white;
     padding: 1.25rem 3rem;
     border-radius: 50px;
@@ -2283,13 +2283,13 @@ nav a {
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 10px 40px rgba(249, 115, 22, 0.4);
+    box-shadow: var(--shadow-orange);
     margin-top: 1rem;
 }
 
 .deployment-cta-btn:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: 0 20px 60px rgba(249, 115, 22, 0.5);
+    box-shadow: var(--shadow-orange-lg);
 }
 
 /* Fortinet certifications */
