@@ -52,7 +52,7 @@ export const servicesContent = {
         'Dark Web Monitoring for Leaked Credentials'
       ],
       testimonial: {
-        quote: 'Smart IT identified 3 critical vulnerabilities. One would have given attackers full database access.',
+        quote: 'Smart IT Solutions identified 3 critical vulnerabilities. One would have given attackers full database access.',
         author: 'Marcus Chen, CTO'
       }
     },

@@ -6,6 +6,7 @@ export interface Testimonial {
     title: string
     company: string
   }
+  companySize: string
   result: {
     metric: string
     label: string
@@ -18,7 +19,7 @@ export const testimonialsContent = {
   testimonials: [
     {
       stars: 5,
-      quote: 'Smart IT\'s network audit uncovered 3 critical vulnerabilities that our previous IT team completely missed. One misconfiguration would have given attackers full access to our customer database. The $12,000 audit saved us from what could have been millions in breach costs and reputational damage.',
+      quote: 'Smart IT Solutions\' network audit uncovered 3 critical vulnerabilities that our previous IT team completely missed. One misconfiguration would have given attackers full access to our customer database. The $12,000 audit saved us from what could have been millions in breach costs and reputational damage.',
       author: {
         name: 'Sarah Martinez',
         title: 'VP of Technology',
@@ -32,7 +33,7 @@ export const testimonialsContent = {
     },
     {
       stars: 5,
-      quote: 'We were facing a 90-day deadline to achieve PCI-DSS compliance or face $250K monthly fines. Smart IT conducted an emergency security review and helped us implement their recommendations in just 45 days. We passed our audit with zero findings.',
+      quote: 'We were facing a 90-day deadline to achieve PCI-DSS compliance or face $250K monthly fines. Smart IT Solutions conducted an emergency security review and helped us implement their recommendations in just 45 days. We passed our audit with zero findings.',
       author: {
         name: 'Michael Rodriguez',
         title: 'CTO',
@@ -46,7 +47,7 @@ export const testimonialsContent = {
     },
     {
       stars: 5,
-      quote: 'We\'ve worked with 4 different IT security firms over 12 years. Smart IT is the first one that actually understands our business needs, not just the technical requirements. Their deployment had zero downtime during Black Friday week—something our previous vendor couldn\'t guarantee.',
+      quote: 'We\'ve worked with 4 different IT security firms over 12 years. Smart IT Solutions is the first one that actually understands our business needs, not just the technical requirements. Their deployment had zero downtime during Black Friday week—something our previous vendor couldn\'t guarantee.',
       author: {
         name: 'Jennifer Liu',
         title: 'IT Director',

@@ -2,7 +2,7 @@ export const heroContent = {
   badges: [
     { icon: '🏆', text: 'SOC 2 Certified' },
     { icon: '⭐', text: '4.9/5 Rating' },
-    { icon: '✓', text: '500+ Audits' }
+    { icon: '✓', text: '525+ Audits' }
   ],
   headline: 'Stop Network Vulnerabilities Before They Cost You Everything',
   subtitle: 'One undetected security gap could expose your business to ransomware, compliance violations, and data breaches. Our CISSP-certified team identifies threats traditional IT overlooks—before attackers find them.',
