@@ -623,7 +623,7 @@ nav a:hover::after {
     font-size: clamp(2rem, 4vw, 2.75rem);
     font-weight: 700;
     margin-bottom: 2rem;
-    color: var(--primary-navy);
+    color: var(--navy-900);
 }
 
 .about-text p {
@@ -676,7 +676,7 @@ nav a:hover::after {
 .stat-number {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--primary-cyan);
+    color: var(--cyan-600);
     display: block;
     font-family: 'Space Grotesk', sans-serif;
 }
@@ -773,7 +773,7 @@ nav a:hover::after {
 /* Contact Section */
 .contact {
     padding: 8rem 0;
-    background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-slate) 50%, var(--primary-cyan) 100%);
+    background: linear-gradient(135deg, var(--navy-900) 0%, var(--navy-800) 50%, var(--cyan-800) 100%);
     color: white;
 }
 
@@ -933,7 +933,7 @@ nav a:hover::after {
 
 /* Footer */
 footer {
-    background: var(--primary-navy);
+    background: var(--navy-900);
     color: white;
     padding: 4rem 0 2rem;
 }
@@ -949,7 +949,7 @@ footer {
     font-size: 1.25rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: var(--accent-cyan);
+    color: var(--cyan-400);
 }
 
 .footer-section p,
@@ -970,7 +970,7 @@ footer {
 }
 
 .footer-section a:hover {
-    color: var(--accent-cyan);
+    color: var(--cyan-400);
 }
 
 .footer-bottom {
@@ -1209,7 +1209,7 @@ html {
     top: -100px;
     left: 50%;
     transform: translateX(-50%);
-    background: var(--highlight-orange);
+    background: var(--orange-600);
     color: white;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -1225,7 +1225,7 @@ html {
 
 /* Focus indicators for accessibility */
 *:focus-visible {
-    outline: 3px solid var(--primary-cyan);
+    outline: 3px solid var(--cyan-500);
     outline-offset: 2px;
     border-radius: 4px;
 }
@@ -1234,7 +1234,7 @@ button:focus-visible,
 .hero-cta:focus-visible,
 .form-submit:focus-visible,
 .nav-cta:focus-visible {
-    outline: 3px solid var(--highlight-orange);
+    outline: 3px solid var(--orange-600);
     outline-offset: 4px;
 }
 
@@ -1345,17 +1345,17 @@ nav a {
 .service-stat {
     margin-top: 1.5rem;
     padding: 1rem;
-    background: rgba(14, 165, 233, 0.1);
+    background: rgba(0, 188, 212, 0.1);
     border-radius: 8px;
-    color: var(--primary-cyan);
+    color: var(--cyan-600);
     font-size: 1.1rem;
 }
 
 .service-testimonial {
     margin-top: 1.5rem;
     padding: 1rem;
-    background: rgba(14, 165, 233, 0.05);
-    border-left: 3px solid var(--primary-cyan);
+    background: rgba(0, 188, 212, 0.05);
+    border-left: 3px solid var(--cyan-600);
     font-size: 0.95rem;
     font-style: italic;
     color: var(--neutral-600);
@@ -1366,14 +1366,14 @@ nav a {
 }
 
 .service-link {
-    color: var(--primary-cyan);
+    color: var(--cyan-600);
     text-decoration: none;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .service-link:hover {
-    color: var(--accent-cyan);
+    color: var(--cyan-500);
     text-decoration: underline;
 }
 
@@ -1453,7 +1453,7 @@ nav a {
 }
 
 .testimonial-stars {
-    color: var(--highlight-orange);
+    color: var(--orange-500);
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
 }
@@ -1479,7 +1479,7 @@ nav a {
 }
 
 .author-info strong {
-    color: var(--primary-navy);
+    color: var(--navy-900);
     font-size: 1.05rem;
 }
 
@@ -1505,7 +1505,7 @@ nav a {
 .result-metric {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary-cyan);
+    color: var(--cyan-600);
     font-family: 'Space Grotesk', sans-serif;
 }
 
@@ -1562,7 +1562,7 @@ nav a {
 
 .faq-item h3 {
     font-size: 1.2rem;
-    color: var(--primary-navy);
+    color: var(--navy-900);
     margin-bottom: 1rem;
     font-weight: 600;
 }
@@ -1574,7 +1574,7 @@ nav a {
 }
 
 .faq-item a {
-    color: var(--primary-cyan);
+    color: var(--cyan-600);
     text-decoration: none;
     font-weight: 500;
 }
@@ -1633,7 +1633,7 @@ nav a {
 .step-number {
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, var(--primary-cyan), var(--accent-cyan));
+    background: linear-gradient(135deg, var(--cyan-500), var(--cyan-700));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -1667,14 +1667,14 @@ nav a {
 }
 
 .contact-link {
-    color: var(--accent-cyan);
+    color: var(--cyan-300);
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .contact-link:hover {
-    color: var(--primary-cyan);
+    color: var(--cyan-200);
     text-decoration: underline;
 }
 
@@ -1687,7 +1687,7 @@ nav a {
 
 /* Form enhancements */
 .required {
-    color: var(--highlight-orange);
+    color: var(--orange-500);
     margin-left: 0.25rem;
 }
 
@@ -1700,9 +1700,9 @@ nav a {
 
 .error-message {
     display: block;
-    color: var(--highlight-orange);
-    background: rgba(249, 115, 22, 0.1);
-    border: 1px solid rgba(249, 115, 22, 0.3);
+    color: var(--orange-600);
+    background: rgba(255, 152, 0, 0.1);
+    border: 1px solid rgba(255, 152, 0, 0.3);
     padding: 0.5rem 0.75rem;
     border-radius: 6px;
     margin-top: 0.5rem;
@@ -1710,8 +1710,8 @@ nav a {
 }
 
 .form-success {
-    background: rgba(6, 182, 212, 0.15);
-    border: 2px solid var(--accent-cyan);
+    background: rgba(0, 188, 212, 0.15);
+    border: 2px solid var(--cyan-500);
     border-radius: 12px;
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -1720,7 +1720,7 @@ nav a {
 .form-success strong {
     display: block;
     font-size: 1.1rem;
-    color: var(--accent-cyan);
+    color: var(--cyan-400);
     margin-bottom: 0.5rem;
 }
 
@@ -2327,8 +2327,8 @@ nav a {
 }
 
 .cert-badge:hover {
-    background: rgba(14, 165, 233, 0.2);
-    border-color: var(--accent-cyan);
+    background: rgba(0, 188, 212, 0.2);
+    border-color: var(--cyan-500);
     transform: translateY(-2px);
 }
 
@@ -2340,7 +2340,7 @@ nav a {
 }
 
 .footer-link:hover {
-    color: var(--accent-cyan);
+    color: var(--cyan-400);
     text-decoration: underline;
 }
 
