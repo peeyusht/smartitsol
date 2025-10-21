@@ -15,17 +15,17 @@ const spaceGrotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: 'Smart IT Solutions | Cybersecurity, Networking & Security Audits',
-  description: 'Expert IT security services including network infrastructure, cybersecurity solutions, and security audits. Protect your business with certified professionals and 24/7 monitoring.',
-  keywords: ['cybersecurity services', 'network infrastructure', 'security audits', 'IT consulting', 'threat protection', 'compliance auditing', 'managed IT services'],
+  title: 'Smart IT Solutions - Network Audits • Security Reviews • System Deployment',
+  description: 'Expert IT services specializing in network audits, security reviews, and professional system deployment. Secure your digital future with Smart IT Solutions.',
+  keywords: ['network audits', 'security reviews', 'system deployment', 'cybersecurity services', 'network infrastructure', 'IT consulting', 'security audits', 'managed IT services'],
   authors: [{ name: 'Smart IT Solutions' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://smartitsolutions.com',
     siteName: 'Smart IT Solutions',
-    title: 'Smart IT Solutions | Cybersecurity, Networking & Security Audits',
-    description: 'Expert IT security services including network infrastructure, cybersecurity solutions, and security audits.',
+    title: 'Smart IT Solutions - Network Audits • Security Reviews • System Deployment',
+    description: 'Expert IT services specializing in network audits, security reviews, and professional system deployment. Secure your digital future with Smart IT Solutions.',
     images: [
       {
         url: '/og-image.png',
@@ -37,8 +37,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Smart IT Solutions | Cybersecurity, Networking & Security Audits',
-    description: 'Expert IT security services including network infrastructure, cybersecurity solutions, and security audits.',
+    title: 'Smart IT Solutions - Network Audits • Security Reviews • System Deployment',
+    description: 'Expert IT services specializing in network audits, security reviews, and professional system deployment. Secure your digital future with Smart IT Solutions.',
     images: ['/og-image.png'],
   },
   robots: {
